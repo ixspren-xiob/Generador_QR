@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Generador QR</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Generador de códigos QR - IX Dev</h1>
+        </header>
+        <main>
+            <form id="formqr">
+                <input id="inputqr" type="text" placeholder="Añade la URL..." />
+                <button type="submit">Generar QR</button>
+            </form>
+            <br>
+            <div id="qrcode" style="width: 128px; height: 128px;"></div>
+            <div id="cargandoqr" style="display: none;">Generando código QR...</div>
+        </main>
+        <script src="index.js" type="module"></script>
+    </body>
+</html>
